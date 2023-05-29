@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.university.AddCampusesController">
+   <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label alignment="CENTER" layoutX="144.0" layoutY="41.0" prefHeight="21.0" prefWidth="337.0" style="&#10;" text="Add Campuses To University" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button id="addDepartmentButton" fx:id="addDepartmentButton" layoutX="196.0" layoutY="296.0" mnemonicParsing="false" onAction="#addDepartmentButtonClicked" prefHeight="30.0" prefWidth="250.0" text="Add Departments" />
+            <VBox id="fieldsHolder" fx:id="fieldsHolder" layoutX="26.0" layoutY="95.0" prefHeight="150.0" prefWidth="588.0" spacing="10.0" style="-fx-border-color: #ccc;">
+               <children>
+                  <TextField id="campusNameField" fx:id="campusNameField" prefHeight="40.0" prefWidth="250.0" promptText="Campus Name" />
+                  <TextField id="campusAddressField" fx:id="campusAddressField" prefHeight="40.0" prefWidth="250.0" promptText="Campus Address" />
+                  <TextField id="directorNameField" fx:id="directorNameField" prefHeight="40.0" prefWidth="250.0" promptText="Director Name" />
+                  <TextField id="directorGradeField" fx:id="directorGradeField" prefHeight="40.0" prefWidth="250.0" promptText="Director Grade" />
+                  <Button id="addMoreCampusButton" fx:id="addMoreCampusButton" mnemonicParsing="false" onAction="#addMoreCampusButtonClicked" text="Add" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

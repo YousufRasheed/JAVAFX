@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="505.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.university.AddComputersController">
+   <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="516.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label alignment="CENTER" layoutX="144.0" layoutY="41.0" prefHeight="21.0" prefWidth="337.0" style="&#10;" text="Add Computers" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button id="closeButton" fx:id="closeButton" layoutX="188.0" layoutY="450.0" mnemonicParsing="false" onAction="#closeButtonClicked" prefHeight="30.0" prefWidth="250.0" text="Done" />
+            <VBox id="fieldsHolder" fx:id="fieldsHolder" layoutX="19.0" layoutY="87.0" prefHeight="343.0" prefWidth="588.0" spacing="10.0" style="-fx-border-color: #ccc;">
+               <children>
+                  <TextField id="systemIDField" fx:id="systemIDField" layoutX="21.0" layoutY="21.0" prefHeight="40.0" prefWidth="250.0" promptText="System ID" />
+                  <TextField id="systemNameField" fx:id="systemNameField" prefHeight="40.0" prefWidth="200.0" promptText="System Name" />
+                  <TextField id="systemSpeedField" fx:id="systemSpeedField" layoutX="21.0" layoutY="71.0" prefHeight="40.0" prefWidth="566.0" promptText="System Speed" />
+                  <TextField id="systemRamField" fx:id="systemRamField" layoutX="21.0" layoutY="121.0" prefHeight="40.0" prefWidth="566.0" promptText="System RAM" />
+                  <TextField id="systemHddSizeField" fx:id="systemHddSizeField" layoutX="21.0" layoutY="121.0" prefHeight="40.0" prefWidth="566.0" promptText="HDD Size" />
+                  <TextField id="systemScreenField" fx:id="systemScreenField" layoutX="21.0" layoutY="121.0" prefHeight="40.0" prefWidth="566.0" promptText="System Screen Size" />
+                  <Button id="addMoreDepButton" fx:id="addMoreDepButton" mnemonicParsing="false" onAction="#addMoreDepButtonClicked" text="Add More" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
